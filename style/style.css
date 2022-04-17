@@ -1,0 +1,263 @@
+/* This content begins from here please take note of that */
+/* This content ends from here please take note of that */
+/* Declaration of font import file begins from here please take note of that */
+@import "./fonts.css";
+
+/* Declaration of font import file ends from here please take note of that */
+/* Universal code begins from here please take note of that */
+* {
+               margin: 0px;
+               padding: 0px;
+               box-sizing: border-box;
+}
+
+/* Universal code ends from here please take note of that */
+/* Root begins from here please take note of that */
+:root {
+               --montserrat: "Montserrat-Medium";
+               --prostaone: "ProstoOne-Regular";
+               --blue: rgb(0, 217, 255);
+}
+
+/* Root ends from here please take note of that */
+
+/* Header begins from here please take note of that */
+.header {
+               height: 100vh;
+               background-image: url("../images/University.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+}
+
+/* First-section begins from here please take note of that */
+.test-mode {
+               display: flex;
+               justify-content: center;
+               background-color: rgb(11, 11, 96);
+               border-bottom-left-radius: 10px;
+               border-bottom-right-radius: 10px;
+               padding: 2.5px 0px;
+               overflow: hidden;
+}
+
+.test-mode-span {
+               color: white;
+               font-family: var(--montserrat);
+               animation-name: test-mode;
+               animation-duration: 10s;
+               animation-timing-function: linear;
+               animation-fill-mode: forwards;
+               animation-iteration-count: infinite;
+               animation-direction: normal;
+               animation-play-state: running;
+               transition: 1s;
+}
+
+@keyframes test-mode {
+               0% {
+                              transform: translateX(215%);
+               }
+
+               100% {
+                              transform: translateX(-215%);
+               }
+}
+
+/* First-section ends from here please take note of that */
+/* Second-section begins from here please take note of that */
+/* Second-section ends from here please take note of that */
+
+
+/* Header ends from here please take note of that */
+/* Main begins from here please take note of that */
+.main {
+               background-color: #252B42;
+}
+
+/* Second-section begins from here please take note of that */
+.second-section {
+               transform: translateY(-50%);
+}
+
+.second-section-box {
+               background-color: white;
+               border-radius: 15px;
+               padding: 15px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 15px;
+               transition: 1s;
+               position: relative;
+}
+
+.second-section-box::before {
+               content: "";
+               width: 100%;
+               height: 100%;
+               background-color: rgba(0, 0, 0, 0.119);
+               position: absolute;
+}
+
+.second-section-box:hover {
+               background-color: var(--blue);
+               color: white;
+}
+
+.second-title {
+               font-family: var(--prostaone);
+               color: var(--blue);
+               transition: 1s;
+               letter-spacing: 0.03em;
+               height: 40px;
+}
+
+.second-section-box:hover .second-title {
+               color: white;
+}
+/* Second-section ends from here please take note of that */
+
+/* Third-section begins from here please take note of that */
+.third-section{
+               padding-bottom: 100px;
+}
+.person-image {
+               width: 100%;
+               transform: translateX(-15px);
+               transition: 1s;
+               animation-name: image;
+               animation-duration: 2s;
+               animation-timing-function: linear;
+               animation-fill-mode: forwards;
+               animation-iteration-count: 1;
+               animation-direction: normal;
+               animation-play-state: running;
+               opacity: 0;
+}
+@keyframes image-ready {
+               0%{
+                              opacity: 0px;
+               }
+               100%{
+                              opacity: 1;
+               }
+}
+
+.third-section-box {
+               background-color: #fff;
+               border-radius: 15px;
+               overflow: hidden;
+               transition: 1s;
+               opacity: 0;
+}
+
+.name {
+               color: #252B42;
+               transition: 1s;
+               font-family: var(--prostaone);
+               font-size: 28px;
+               letter-spacing: 0.03em;
+               height: 30px;
+}
+
+.information-box {
+               padding: 15px 25px;
+}
+
+.third-section-box:hover .person-image {
+               transform: scale(1.1);
+}
+
+.third-section-box:hover {
+               background-color: var(--blue);
+}
+
+.third-section-box:hover .name {
+               color: white;
+}
+
+.profession {
+               font-family: var(--montserrat);
+               font-size: 18px;
+               line-height: 25px;
+               color: #737373;
+               transition: 1s;
+               letter-spacing: 0.03em;
+               height: 25px;
+}
+
+.third-section-box:hover .profession {
+               color: white;
+}
+
+.star-box {
+               display: flex;
+               gap: 15px;
+               margin-top: 30px;
+               opacity: 0;
+}
+
+.summary {
+               font-size: 18px;
+               line-height: 22px;
+               color: #737373;
+               transition: 1s;
+               letter-spacing: 0.03em;
+               margin-top: 15px;
+               font-family: var(--montserrat);
+}
+
+.third-section-box:hover .summary {
+               color: white;
+}
+
+.shadow {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               margin-bottom: 15px;
+               box-shadow: none !important;
+}
+.order{
+               letter-spacing: 0.03em;
+               font-family: var(--montserrat);
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+               background-color: rgb(18, 18, 100);
+               border-radius: 15px;
+               padding: 5px 10px;
+}
+.audio{
+               opacity: 0;
+               width: 0px;
+}
+/* Third-section ends from here please take note of that */
+
+/* Main ends from here please take note of that */
+/* Footer begins from here please take note of that */
+.footer_box{
+               transform: translateY(-60%);
+               background-color: white;
+               padding: 15px 0px;
+               box-shadow: 10px 10px 10px black;
+               border-radius: 15px;
+
+}
+.footer_title{
+               font-size: 32px;
+               text-align: center;
+}
+.fifth-section{
+               background-color: #252B42;
+               padding: 15px 0px;
+}
+.footer_text{
+               margin: 0px;
+               color: var(--blue);
+               font-family: var(--montserrat);
+               font-size: 18px;
+               text-align: center;
+}
+/* Footer ends from here please take note of that */

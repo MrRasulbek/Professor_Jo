@@ -1,0 +1,82 @@
+@media (max-width: 992px) {
+               .header{
+                              height: 90vh;
+               }
+               .person-image{
+                              transform: translateX(0px);
+               }
+               .name{
+                              transform: translateY(25px);
+                              margin-bottom: 35px;
+               }
+               .profession{
+                              height: 30px;
+               }
+}
+@media (max-width: 772px) {
+               .header{
+                              height: 75vh;
+               }
+               .second-title{
+                              text-align: center;
+               }
+               .second-section-box{
+                              padding: 10px;
+               }
+               .second-title{
+                              font-size: 32px;
+               }
+               .second-section-span{
+                              animation-duration: 6s;
+               }
+               @keyframes test-mode {
+                              0%{
+                                             transform: translateX(150%);
+                              }
+                              100%{
+                                             transform: translateX(-150%);
+                              }
+               }
+               .profession{
+                              height: 50px;
+               }
+               .second-title{
+                              height: 80px;
+               }
+}
+@media (max-width: 576px) {
+               .header{
+                              height: 65vh;
+               }
+               .second-title{
+                              font-size: 26px;
+               }
+               .second-title{
+                              height: 50px;
+               }
+               .profession{
+                              height: 60px;
+               }
+}
+@media (max-width: 500px) {
+               .header{
+                              height: 50vh;
+               }
+}
+@media (max-width: 400px) {
+               .header{
+                              height: 45vh;
+               }
+               
+               .second-title{
+                              font-size: 22px;
+               }
+               .second-section{
+                              transform: translateY(-30%);
+               }
+}
+@media (max-width: 350px) {
+               .header{
+                              height: 38vh;
+               }
+}
